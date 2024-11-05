@@ -7,12 +7,12 @@ public class VelocityRotation : MonoBehaviour
     [SerializeField] private float negativeRotation = -30f;
     [SerializeField] private float rotationSpeed = 30f;
 
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     private Quaternion targetRotation;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
